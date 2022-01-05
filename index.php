@@ -14,17 +14,20 @@
 
 
 
-$paragrph = "Aspettati veleno dall'acqua stagnante.";
-echo strlen ($paragrph);
+$paragraph = "Aspettati veleno dall'acqua stagnante.";
+
+echo $paragraph;
+echo "Lunghezza:" .strlen ($paragrph);
 
 
-#$badWord = $_GET['badword'];
-#echo 'BADWORD:' .$badWord;
+$badword = $_GET['badword'];
+echo 'BADWORD:' .$badword;
 
-#$newParagraph = str_replace($badword, '***',$paragraph);
-#echo $newParagraph;
-#echo 'lunghezza:' .strlen($newParagraph);
+$newParagraph = str_replace($badword, '***', $paragraph);
 
+echo $newParagraph;
+echo "<br>";
+echo 'Lunghezza:' .strlen($newParagraph);
 
 
 ?>
